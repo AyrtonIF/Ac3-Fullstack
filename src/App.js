@@ -4,22 +4,25 @@ import Home from './Home';
 import Usuario from './Usuario';
 import Informacoes from './Informacoes';
 import PaginaDoUsuario from './PaginaDoUsuario';
+import Api from './Api';
 
 export default function App() {
   return (
       <>
     <header>
-    <p><Link to='/home'>Home</Link></p>
-     <p><Link to='/usuario'> Usuario </Link></p>
-     <p><Link to='/informacoes'> Informacões </Link></p>
+     <p><Link to='/Home'> Home </Link></p>
+     <p><Link to='/Usuario'> Usuario </Link></p>
+     <p><Link to='/Informacoes'> Informacões </Link></p>
      <p><Link to='/PaginaDoUsuario'> PaginaDoUsuario </Link></p>
+     <p><Link to='/Api'> Api </Link></p>
     </header>
     <main>
         <Switch>
-          <Route path='/home' component= {Home}/>
-          <Route path='/usuario' component= {Usuario}/>
-          <Route path='/informacoes' component= {Informacoes}/>
+          <Route path='/Home' component= {Home}/>
+          <Route path='/Usuario' component= {Usuario}/>
+          <Route path='/Informacoes' component= {Informacoes}/>
           <Route path='/PaginaDoUsuario' component= {PaginaDoUsuario}/>
+          <Route path='/Api' component= {Api}/>
         </Switch>
       </main></>
   );
